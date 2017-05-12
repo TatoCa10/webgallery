@@ -90,7 +90,7 @@ public class DepartamentoDAO {
                         preparedStmt.setString (2, obra.getNombreObra());
                         preparedStmt.setString (3, obra.getDescp());
                         preparedStmt.setString (4, obra.getEstilo());
-                        preparedStmt.setInt (2, obra.getValor);
+                        preparedStmt.setInt (5, obra.getValor());
 			result= preparedStmt.execute();
 	    } catch (SQLException e) {
 			e.printStackTrace();
